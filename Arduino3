@@ -1,0 +1,41 @@
+#define MLa 8
+#define MLb 9
+#define MRa 10
+#define MRb 11
+void setup()
+{
+  pinMode(MLa,OUTPUT);
+  pinMode(MLb,OUTPUT);
+  pinMode(MRa,OUTPUT);
+  pinMode(MRb,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(MLa,LOW);
+  digitalWrite(MLb,LOW);
+  digitalWrite(MRa,LOW);
+  digitalWrite(MRb,LOW);
+
+delay(1000);
+
+  digitalWrite(MLa,HIGH);
+  digitalWrite(MLb,HIGH);
+  digitalWrite(MRa,HIGH);
+  digitalWrite(MRb,HIGH);
+  delay(2000);
+   digitalWrite(MLa,LOW);
+   digitalWrite(MLb,HIGH);
+   digitalWrite(MRa,LOW);
+   digitalWrite(MRb,HIGH);
+   delay(2000);
+   digitalWrite(MLa,HIGH);
+    digitalWrite(MLb,LOW);
+     digitalWrite(MRa,LOW);
+     digitalWrite(MRb,HIGH);
+     delay(2000);
+     digitalWrite(MLa,LOW);
+     digitalWrite(MLb,HIGH);
+      digitalWrite(MRa,HIGH);
+      digitalWrite(MRb,LOW);
+      delay(2000);
+}
